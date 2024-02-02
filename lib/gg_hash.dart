@@ -3,6 +3,4 @@
 /// More dartdocs go here.
 library;
 
-export 'src/gg_hash_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'src/fnv1.dart';
