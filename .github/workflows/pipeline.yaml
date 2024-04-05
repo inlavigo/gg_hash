@@ -24,6 +24,8 @@ jobs:
 
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Check for Flutter Project
         run: |
@@ -75,14 +77,14 @@ jobs:
             dart pub get
           fi
 
-      # - name: Activate gg
-      #   run: dart pub global activate gg
-      #
-      # - name: gg did push
-      #   run: gg did push
+      - name: Activate gg
+        run: dart pub global activate gg
 
-      - name: Run tests
-        run: dart test
+      - name: Did you execute »gg did push«?
+        run: gg did push
 
-      - name: Run Script
-        run: dart run gg can commit
+      - name: Did you execute »gg did commit«?
+        run: gg did push
+
+      - name: Run »gg can commit --force«
+        run: gg can commit --force
