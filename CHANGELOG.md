@@ -6,6 +6,7 @@
 
 - Kidney: Auto check all repos
 - Rework changelog
+- 'Github Actions Pipeline'
 
 ## [1.0.1] - 2024-04-05
 
